@@ -1,0 +1,29 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+   .content{
+       width: 1000px;
+       height: 500px;
+       border: 1px solid;
+       margin: 0 auto;
+       background: pink;
+   }
+    .decrement, .increment {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border:1px solid;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        background: yellowgreen;
+    }
+    .amount {
+        width: 100px;
+        text-align: center;
+    }
+    #img{
+        width: 100px;
+        height: 80px;
+    }

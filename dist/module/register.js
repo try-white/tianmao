@@ -1,0 +1,1 @@
+define(["jquery"],function(n){function e(){}return e.prototype.nav=function(){},new e});

@@ -1,0 +1,1 @@
+define(["jquery"],function(n){function o(){}return o.prototype.nav=function(){console.log("footer")},new o});

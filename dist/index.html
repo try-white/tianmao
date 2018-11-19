@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+		<title></title>
+		<link rel="stylesheet" href="/css/index.css" />
+	</head>
+	<body>
+		<header></header>
+		<section>
+	<div class="box">
+		<div class="wrapT">
+			<div class="s_nav">
+		    	<span  style="margin-left: 10px;"><img src="/images/menu-left.jpg"/></span>
+		    	<span class="selector">商品分类</span>
+		    	 <ul>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">平板电视</a>
+		    	 	</li>
+		    	 	
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">马桶</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">沙发</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">电热水器</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">平衡车</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">扫地机器人</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">原汁机</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">冰箱</a>
+		    	 	</li>
+		    	 	
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">女表</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">男表</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">男士手拿包</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">男士西服</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">时尚男鞋</a>
+		    	 	</li>
+		    	 	<li>
+		    	 		<span class="glyphicon glyphicon-link"></span>
+		    	 		<a href="javascript:;">品牌女装</a>
+		    	 	</li>
+		    	 </ul>
+		    </div>
+		    <div class="rightMenu">
+		    	<ul>
+		    		<li><a href="javascript:;"><img src="images/chaoshi.png"/></a></li>
+		    		<li><a href="javascript:;"><img src="images/guoji.png"/></a></li>
+		    		<li><a href="javascript:;">平板电视</a></li>
+		    		<li><a href="javascript:;">马桶</a></li>
+		    		<li><a href="javascript:;">沙发</a></li>
+		    		<li><a href="javascript:;">电热水器</a></li>
+		    	</ul>
+		    	
+		    </div>
+		</div> 
+	</div>
+	
+	  <!--轮播图-->
+	  <div class="banner">
+	   		 <div id="div1">
+					<ul>
+				    	<li><img src="/images/1(1).jpg" /></li>
+				    	<li><img src="/images/2(1).jpg" /></li>
+				    	<li><img src="/images/3(1).jpg" /></li>
+				    	<li><img src="/images/4(1).jpg" /></li>
+				    </ul>
+				    <ol>
+				    </ol>
+				    <a href="javascript:;" id="left">&laquo;</a>
+				    <a href="javascript:;" id="right">&raquo;</a>
+	          </div>
+	 </div>
+	
+	<!--商品列表页-->
+	    <div class="list_product">
+	    	<div class="wrapF">
+	    		<div id="products">
+		  	           <ul id="pro-list"></ul>
+		  		         <script type="text/html" id="pro-template">
+		  			          {{each products}}
+		  		         <li>
+				  			<div class="pic"><img src="{{$value.img}}"/></div>
+				  			<p class="name">{{$value.name}}</p>
+				  			<p class="price">￥{{$value.price}}</p>
+				  			<a href="/html/detail.html?id={{$value.id}}" class="checkList">查看详情</a>
+				  			<div style="float: right;" id="addCart" class="addCart"><img src="/images/headerCar.jpg"/><a href="/html/Shopping.html">加入购物车</a></div>
+		  		         </li>
+		  		            {{/each}}
+		  		         </script>
+		       </div>	
+	    	</div>
+	    </div>
+		</section>
+		<footer></footer>
+		<script src="libs/require/require.js" data-main="/js/index.js"></script>
+	</body>
+</html>

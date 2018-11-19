@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<header></header>
+		  <div id="products">
+		  	<ul id="pro-list"></ul>
+		  		<script type="text/html" id="pro-template">
+		  			{{each products}}
+		  		<li style="width: 190px;background: yellow;float: left;margin-left: 8px;">
+		  			<div class="pic"><img src="{{$value.img}}"/></div>
+		  			<p class="name">{{$value.name}}</p>
+		  			<p class="price">{{$value.price}}</p>
+		  		</li>
+		  		    {{/each}}
+		  		</script>
+
+		  </div>
+		<script src="/libs/require/require.js" data-main="/js/list.js"></script>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>免费注册</title>
+		<link rel="stylesheet" href="/css/register.css" />
+	</head>
+	<body>
+		<header></header>
+		<div class="container">
+			<span><img src="/images/welcome.png"/></span>
+			<!--注册页面左图-->
+			<div class="left"></div>
+			<!--注册栏-->
+			<div class="right">
+				<div class="reg-label">
+					<label>用户注册</label>
+					<hr>
+				</div>
+				<div class="reg-box">
+					 <form id="formId" class="reg-form">
+                    <div>
+                        <tr>
+                            <td><input type="text" name="Username" id="username" autofocus="autofocus" required="required" placeholder="用户名"></td>
+                            <td><label id="errorName"></label></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input type="password" name="Password" id="password" placeholder="密码"></td>
+                            <td><label id="errorPassword"></label></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input type="password" name="Repassword" id="InputRepassword" placeholder="确认密码"></td>
+                            <td><label id="errorRepassword"></label></td>
+                        </tr>
+                    </div>
+                    <div>
+                        <tr>
+                            <td><input type="email" name="E-mail" id="email" placeholder="电子邮箱"></td>
+                            <td><label id="errorEmail"></label></td>
+                        </tr>
+                    </div>
+                    <div class="reg-sub">
+                        <input id="submitButton" type="submit" value="免费注册">
+                    </div>
+                </form>
+
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+
+	</body>
+<script type="text/javascript" src="/libs/require/require.js" data-main ="/js/register.js"></script>
+	
+</html>

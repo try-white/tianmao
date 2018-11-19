@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/Shopping.css" />
+	</head>
+	<body>
+     <header></header>
+    <div class="content">
+	  <div class="content_box">
+		<div class="cart not-empty hidden">
+			<table class="table table-bordered cart-table">
+				<thead>
+					<tr>
+						<th><label><input type="checkbox" class="ck_all">全选</label></th>
+						<th>序号</th>
+						<th>图片</th>
+						<th>标题</th>
+						<th>价格</th>
+						<th>数量</th>
+						<th>小计</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+				<tbody>
+				
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>合计</td>
+						<td colspan="7" class="total">0</td>
+					</tr>
+				</tfoot>
+			</table>
+				<!-- art-Template 模板引擎 -->
+<script type="text/html" id="cart-body-template">
+	{{each products prod}}
+	<tr class="tr">
+		<td><input type="checkbox" class="ck_prod"></td>
+		<td class="id">{{prod.id}}</td>
+		<td><img src="{{prod.bigImg}}" alt="" class="img" id="img"></td>
+		<td class="title">{{prod.productTitle}}</td>
+		<td class="price">{{prod.promotionPrice}}</td>
+		<td><span class="decrement">-</span><input type="text" class="amount" value="{{prod.amount}}"><span class="increment">+</span></td>
+		<td class="sub">{{prod.promotionPrice*prod.amount}}</td>
+		<td><a href="javascript:void(0);" class="del" id="del">删除</a></td>
+	</tr>
+	{{/each}}
+</script>
+
+			<a class="btn btn-danger" href="/html/confirm.html">结算</a>
+		</div>
+		
+		
+	   </div>
+	 </div>	
+    <footer></footer>
+    <script src="/libs/require/require.js" data-main="/js/Shopping.js"></script>
+</body>
+</html>

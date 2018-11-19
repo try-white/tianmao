@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/detail.css" />
+	</head>
+	<body>
+		<header></header>
+		<!--产品和数量-->
+		<div id="detail">
+	    <script type="text/html" id="detail-template">
+		<div class="headProduct"><img src="{{product.headProduct}}" class="headProduct"/></div>
+		<div class="productPageDiv">
+		<div class="imgAndInfo">
+	<div class="imgInimgAndInfo" id="imgInimgAndInfo">
+		<img src="{{product.bigImg}}" class="bigImg">
+		<div class="smallImageDiv">	
+				<img src="{{product.smallImage1}}" class="smallImage">
+				<img src="{{product.smallImage2}}" class="smallImage">
+				<img src="{{product.smallImage3}}"  class="smallImage">
+				<img src="{{product.smallImage4}}"  class="smallImage">
+				<img src="{{product.smallImage5}}" class="smallImage">
+		</div>
+		<div class="imgload hidden" ></div>
+	</div>
+	
+	
+	<div class="infoInimgAndInfo">
+		
+		<div class="productTitle">
+			{{product.productTitle}}
+		</div>
+		<div class="productSubTitle">
+			{{product.productSubTitle}} 
+		</div>
+		
+		<div class="productPrice">
+			<div class="juhuasuan">
+				<span class="juhuasuanBig" >聚划算</span>
+				<span>此商品即将参加聚划算，<span class="juhuasuanTime">1天19小时</span>后开始，</span>
+			</div>
+			<div class="productPriceDiv">
+				<div class="gouwujuanDiv"><img height="16px" src="/images/gouwujuan.png">
+				<span> 全天猫实物商品通用</span>
+				
+				</div>
+				<div class="originalDiv">
+					<span class="originalPriceDesc">价格</span>
+					<span class="originalPriceYuan">¥</span>
+					<span class="originalPrice">
+					
+						8,960.00					
+					</span>
+				</div>
+				<div class="promotionDiv">
+					<span class="promotionPriceDesc">促销价 </span>
+					<span class="promotionPriceYuan">¥</span>
+					<span class="promotionPrice">
+						{{product.promotionPrice}}
+					</span>				
+				</div>
+			</div>
+		</div>
+	
+	
+		<div class="productSaleAndReviewNumber">
+			<div>销量 <span class="redColor boldWord"> 188</span></div>	
+			<div>累计评价 <span class="redColor boldWord"> 20</span></div>	
+		</div>
+		<div class="productNumber">
+			<span>数量</span>
+			<span>
+				<span class="productNumberSettingSpan">
+				<input class="productNumberSetting" type="text" value="1">
+				</span>
+				<span class="arrow">
+					<a href="#nowhere" class="increaseNumber">
+					<span class="updown">
+							<img src="/images/increase.png">
+					</span>
+					</a>
+					
+					<span class="updownMiddle"> </span>
+					<a href="#nowhere"  class="decreaseNumber">
+					<span class="updown">
+							<img src="/images/decrease.png">
+					</span>
+					</a>
+					
+				</span>
+					
+			件</span>
+			<span>库存62件</span>
+		</div>
+		<div class="serviceCommitment">
+			<span class="serviceCommitmentDesc">服务承诺</span>
+			<span class="serviceCommitmentLink">
+				<a href="#nowhere">正品保证</a>
+				<a href="#nowhere">极速退款</a>
+				<a href="#nowhere">赠运费险</a>
+				<a href="#nowhere">七天无理由退换</a>
+			</span>
+		</div>	
+		
+		<div class="buyDiv">
+			<a class="buyLink" href="/html/Shopping.html?id=1"><button class="buyButton">立即购买</button></a>
+			<a href="javascript:;" class="addCartLink"><button class="addCartButton"><span class="glyphicon glyphicon-shopping-cart"><img src="/images/addCart.jpg"/></span>加入购物车</button></a>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+  </div>
+</div>
+    <!--评论，详情大图片-->
+       
+<div class="productReviewDiv" id="productReviewDiv">
+	<div class="productReviewTopPart">
+		<a  href="#nowhere" class="productReviewTopPartSelectedLink" style="padding: 0 20px;color: #333333;">商品详情</a>
+		<a  href="#nowhere" class="selected" style="color: #3355B9;text-decoration: none;">累计评价 <span class="productReviewTopReviewLinkNumber">19</span> </a>
+	</div>
+		
+	<div class="productReviewContentPart">
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">	
+				</div>
+				<div class="productReviewItemDate">2018-08-27</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				h*****1<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					
+				</div>
+				<div class="productReviewItemDate">2018-08-27</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				h*****1<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		
+		</div>
+		
+		<div class="productReviewItem">
+		
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					5555
+				</div>
+				<div class="productReviewItemDate">2018-06-21</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+			
+				4*******4<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			
+			<div style="clear:both"></div>
+		
+		</div>
+		
+		<div class="productReviewItem">
+		
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					hen
+				</div>
+				<div class="productReviewItemDate">2017-12-07</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+			
+				l****3<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			
+			<div style="clear:both"></div>
+		
+		</div>
+		
+		<div class="productReviewItem">
+		
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					是正品，质量不错，比实体店便宜多了，刚刚安装上，外观也很不错 安装人员服务态度很好，刚刚到货的时候安装人员就即时来电预约安装时间，等需要安装的时候一个电话就上门安装了。
+				</div>
+				<div class="productReviewItemDate">2016-07-08</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+			
+				丶***眠<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			
+			<div style="clear:both"></div>
+		
+		</div>
+		
+		<div class="productReviewItem">
+		
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					昨日收到货，因为正在装修还未到安装，所以不敢拆除包装，先打开纸包装看了下坐便器，果然是大品牌，釉面光洁亮度高，工艺精良，款式新颖时尚，面板厚实明显是为高端马桶配备，这个价买到这么好的大牌马桶，太值了！等安装好了再追评
+				</div>
+				<div class="productReviewItemDate">2016-08-24</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+			
+				醉**心<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			
+			<div style="clear:both"></div>
+		
+		</div>
+		
+		<div class="productReviewItem">
+		
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					箭牌还是不错的。质量可以，而且用的水比家里旧的少很多了。虽然快递没有送货上门，马桶是我自己搬上去的。但是店家的客服态度很好，积极处理了此事。安装师傅很有耐心，家里卫生间地面不平，马桶安装后晃动严重，师傅很有耐心的垫东西。不说了，快递不是店家的锅。好评
+				</div>
+				<div class="productReviewItemDate">2016-07-28</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+			
+				死***堂<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					货收到 并安置好了 是正品 货还没到 安装师傅 就开始联系了 货到后马上上门安装 因为我是换掉旧马桶 安装师傅不怕麻烦先拆掉旧的 并且很仔细的安装好新的 后面的亲们 放心吧 很值得购买 必须5分 服务细致耐心
+				</div>
+				<div class="productReviewItemDate">2016-08-11</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				哀****莉<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					德邦师傅做事爽快，一个人扛不用我帮，活动也给力。浴室柜都在华耐买的。
+				</div>
+				<div class="productReviewItemDate">2016-07-18</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				s********u<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					我很少写差评，这次真是太气人了。问客服花洒的事，就跟我扯皮然后换客服，每次说查一下就没下文了，扯了整整三天。结果最后发现客服给我的是马桶的单号，花洒根本就没发货。我真是疯了。这中间浪费我多少时间和精力。问题太多没法一一说，在这买东西就准备打持久战吧！绝对差评！差评！
+				</div>
+				<div class="productReviewItemDate">2016-07-08</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				乱**型<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					箭牌马桶不亏是名牌产品，华耐立家也不亏为名牌企业。6月6日订货，8月16日安我的要求卖家配货，8月21日送货安装，整整75天呀，华耐立家全程服务着，波妞也一直是为用户出主意想办法，精心安排，跟踪服务，自始至终一丝不苟，还有笑笑、西卡。。。为啥华耐这几年发展如此之快，竭诚为民、创新管理、用服务创效益，用服务开辟了华耐立家的新天地。祝华耐蓬勃发展更上一层楼！祝波妞创造新佳绩！
+				</div>
+				<div class="productReviewItemDate">2016-08-01</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				阿*丶<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem"
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					马桶质量不错。很节水，声音也不大。冲力很大很强劲。大品牌就是好用。全家人都说值。物流也快。满意好评
+				</div>
+				<div class="productReviewItemDate">2016-07-22</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				想****〃<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					马桶质量不错。很节水，声音也不大。冲力很大很强。。全家人都说值。安装师傅很迅速，十分钟搞定！ 物流也快。满意好评
+				</div>
+				<div class="productReviewItemDate">2016-07-14</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				亡***子<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					收到了，才安装好，质量不错，节水，冲水力很强，声音也不大，一次满意的购物
+				</div>
+				<div class="productReviewItemDate">2016-07-31</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				y****心<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					包装非常专业，没有破损，安装好了，很漂亮，功能实用，价格比实体店优惠，整体很满意
+				</div>
+				<div class="productReviewItemDate">2016-07-29</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				想****〃<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					终于安装好了。卖家发货后，14号就到天水了，可是等到22号，我自己才四处查询打电话，联系到安装负责人，才分派了师傅前来安装。还好安装好之后没有让我太失望，否则真是糟心！安装这一块还有待于大大改进！
+				</div>
+				<div class="productReviewItemDate">2016-07-31</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				豪**秀<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					此用户没有填写评论！
+				</div>
+				<div class="productReviewItemDate">2016-08-01</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				阿*丶<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					还不错，比现在家里用的那个大多了，还没用过，安装师傅很不错，耐心， 我家电工留的孔距有点不对，导致安装好后，后面间距大，师傅还帮我把盖板那里打了点胶，叮嘱我们，平常马桶盖注意，不要太用力往上推，怕时间久了，把按键上的盖板推松了，掉下去，摔坏了，
+				</div>
+				<div class="productReviewItemDate">2016-07-22</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				丶***眠<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<div class="productReviewItem">
+			<div class="productReviewItemDesc">
+				<div class="productReviewItemContent">
+					马桶质量很好，很节水，超静音。物流很快，安装师傅服务态度很好。
+				</div>
+				<div class="productReviewItemDate">2016-08-24</div>
+			</div>
+			<div class="productReviewItemUserInfo">
+				法****情<span class="userInfoGrayPart">（匿名）</span>
+			</div>
+			<div style="clear:both"></div>
+		</div>	
+	</div>
+</div>	
+<div class="productDetailDiv" >
+	<div class="productDetailTopPart">
+		<a href="#nowhere" class="productDetailTopPartSelectedLink selected">商品详情</a>
+		<a href="#nowhere" class="productDetailTopReviewLink">累计评价 <span class="productDetailTopReviewLinkNumber">19</span> </a>
+	</div>
+	<div class="productParamterPart">
+		<div class="productParamter">产品参数：</div>
+		<div class="productParamterList">
+				<span>同城服务:  同城物流送货上门 </span>
+				<span>坐便冲水量:  3/6L </span>
+				<span>颜色分类:  【箭牌头牌 收藏送原 </span>
+				<span>承重:  70kg及以上 </span>
+				<span>最小坑距:  305mm 400m </span>
+				<span>材质:  PP板 </span>
+				<span>排水方式:  地排水 </span>
+				<span>坐便器冲水方式:  喷射虹吸式 </span>
+				<span>型号:  AB1116 </span>
+				<span>盖板是否缓冲:  缓冲 </span>
+				<span>坐便器类型:  连体式 </span>
+				<span>冲水按键类型:  上按两端式 </span>
+				<span>品牌:  ARROW/箭牌 </span>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div class="productDetailImagesPart">
+				<img src="/images/1297.jpg">
+				<img src="/images/1296.jpg">
+				<img src="/images/1295.jpg">
+				<img src="/images/1294.jpg">
+				<img src="/images/1293.jpg">
+				<img src="/images/1292.jpg">
+	</div>
+ </div>
+</div>
+</script>
+</div>
+		<script src="/libs/require/require.js" data-main="/js/detail.js"></script>
+		<footer></footer>
+	</body>
+</html>
